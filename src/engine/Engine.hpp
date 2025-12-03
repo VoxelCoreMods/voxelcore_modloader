@@ -41,6 +41,11 @@ namespace devtools {
     class DebuggingServer;
 }
 
+// [[MOD LOADER STUFF]]
+namespace modding {
+    class ModLoader;
+}
+
 class initialize_error : public std::runtime_error {
 public:
     initialize_error(const std::string& message) : std::runtime_error(message) {}
@@ -66,6 +71,10 @@ class Engine : public util::ObjectsKeeper {
     std::unique_ptr<devtools::Editor> editor;
     std::unique_ptr<devtools::DebuggingServer> debuggingServer;
     std::unique_ptr<WindowControl> windowControl;
+
+    // [[MOD LOADER STUFF]]
+    std::unique_ptr<modding::ModLoader> modLoader;
+
     PostRunnables postRunnables;
     Time time;
     OnWorldOpen levelConsumer;
@@ -77,6 +86,9 @@ class Engine : public util::ObjectsKeeper {
     void updateHotkeys();
     void loadAssets();
     void loadProject();
+
+    // [[MOD LOADER STUFF]]
+    void loadMods();
 
     void initializeClient();
     void onContentLoad();
@@ -179,6 +191,11 @@ public:
 
     devtools::DebuggingServer* getDebuggingServer() {
         return debuggingServer.get();
+    }
+
+    // [[MOD LOADER STUFF]]
+    modding::ModLoader& getModLoader() {
+        return *modLoader;
     }
 
     void detachDebugger();

@@ -34,6 +34,10 @@
 #include "window/input.hpp"
 #include "window/Window.hpp"
 #include "world/Level.hpp"
+
+// [[MOD LOADER STUFF]]
+#include "ModLoader.hpp"
+
 #include "Mainloop.hpp"
 #include "ServerMainloop.hpp"
 #include "WindowControl.hpp"
@@ -183,6 +187,35 @@ void Engine::initialize(CoreParameters coreParameters) {
     if (!params.headless) {
         project->loadProjectClientScript();
     }
+
+    // [[MOD LOADER STUFF]]
+    loadMods();
+}
+
+// [[MOD LOADER STUFF]]
+void Engine::loadMods() 
+{
+    logger.info() << "initializing mod loader";
+    
+    modLoader = std::make_unique<modding::ModLoader>();
+    
+    io::path modsPath = io::path("user:mods");
+    
+    if (!io::is_directory(modsPath)) 
+    {
+        logger.info() << "creating mods directory: " << modsPath.string();
+
+        try {
+            io::create_directories(modsPath);
+        } catch (const std::exception& e) {
+            logger.warning() << "failed to create mods directory: " << e.what();
+            return;
+        }
+    }
+    
+    size_t loadedCount = modLoader->loadMods(modsPath, *this);
+
+    logger.info() << "mod loading complete: " << loadedCount << " mod(s) loaded";
 }
 
 void Engine::loadSettings() {
