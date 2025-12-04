@@ -13,6 +13,7 @@ block.__perform_ticks = function(delta)
             goto continue
         end
         entry.timer = 0.0
+        entry.pointer = entry.pointer % #entry
         local event = entry.event
         local tps = entry.tps
         for i=1, steps do
