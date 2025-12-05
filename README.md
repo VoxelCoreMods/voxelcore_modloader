@@ -6,7 +6,7 @@ You can create your own C++ native mods for this game engine
 
 ## Quick Start
 
-1. **Download the latest release** from the [Releases](https://github.com/your-username/voxelcore-mod-loader/releases) page.
+1. **Download the latest release** from the [Releases](https://github.com/VoxelCoreMods/voxelcore_modloader/releases/tag/release) page.
 2. Extract the contents into your VoxelCore installation folder.
 3. Place your compiled `.dll` (Windows) or `.so` (Linux) mod files into the `mods/` directory.
 4. Launch the game — mods will be loaded automatically!
