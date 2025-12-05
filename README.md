@@ -1,4 +1,4 @@
-# ![voxel-core](dev/VoxelCore.png) VoxelCore Mod Loader
+# <img width="256" height="256" alt="vcml" src="https://github.com/user-attachments/assets/0c8d62ce-6e79-409a-9016-905f514c04d1" /> VoxelCore Mod Loader
 
 This is a simple mod loader for VoxelCore
 
