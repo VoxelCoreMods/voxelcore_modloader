@@ -14,8 +14,9 @@ You can create your own C++ native mods for this game engine
 ## How to create my own mod?
 
 [Use this example for start](https://github.com/VoxelCoreMods/ExampleMod)
+
 ```cpp
-// example_mod.cpp
+// examplemod.cpp
 #include <engine/Engine.hpp>
 #include <engine/ModLoader.hpp>
 #include <world/Level.hpp>
