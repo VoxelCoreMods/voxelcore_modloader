@@ -1,0 +1,18 @@
+{
+    "components": [
+        {
+            "name": "base:drop",
+            "args": {
+                "item": "base:stone.item",
+                "count": 1
+            }
+        }
+        
+    ],
+    "hitbox": [0.4, 0.25, 0.4],
+    "sensors": [
+        ["radius", 0.3],
+        ["radius", 1.6]
+    ],
+    "blocking": false
+}

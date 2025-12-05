@@ -85,6 +85,11 @@ void Engine::onContentLoad() {
         }
     }
     loadAssets();
+
+    // [[MOD LOADER STUFF]]
+    if (modLoader) {
+        modLoader->broadcastContentLoad();
+    }
 }
 
 void Engine::initializeClient() {
@@ -344,10 +349,17 @@ void Engine::saveSettings() {
 void Engine::close() {
     saveSettings();
     logger.info() << "shutting down";
+
+    // [[MOD LOADER STUFF]]
+    if (modLoader) {
+        modLoader->broadcastEngineShutdown();
+    }
+
     if (screen) {
         screen->onEngineShutdown();
         screen.reset();
     }
+
     content.reset();
     assets.reset();
     cmd.reset();
@@ -439,11 +451,21 @@ void Engine::setScreen(std::shared_ptr<Screen> screen) {
 void Engine::onWorldOpen(std::unique_ptr<Level> level, int64_t localPlayer) {
     logger.info() << "world open";
     levelConsumer(std::move(level), localPlayer);
+
+    // [[MOD LOADER STUFF]]
+    if (modLoader) {
+        modLoader->broadcastWorldOpen(level.get(), localPlayer);
+    }
 }
 
 void Engine::onWorldClosed() {
     logger.info() << "world closed";
     levelConsumer(nullptr, -1);
+    
+    // [[MOD LOADER STUFF]]
+    if (modLoader) {
+        modLoader->broadcastWorldClosed();
+    }
 }
 
 void Engine::quit() {

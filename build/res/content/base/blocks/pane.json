@@ -1,0 +1,17 @@
+{
+    "texture-faces": [
+        "pane_side",
+        "pane_side",
+        "pane_side_2",
+        "pane_side_2",
+        "pane",
+        "pane"
+    ],
+    "material": "base:wood",
+    "model": "aabb",
+    "hitbox": [0.0, 0.0, 0.0, 1.0, 1.0, 0.2],
+    "light-passing": true,
+    "sky-light-passing": true,
+    "rotation": "pane",
+    "base:durability": 2.5
+}

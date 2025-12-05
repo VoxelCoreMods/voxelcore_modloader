@@ -1,12 +1,14 @@
-#include "ModLoader.hpp"
 #include "engine/Engine.hpp"
+#include "world/Level.hpp"
+#include "ModLoader.hpp"
+
 #include "io/io.hpp"
 #include "debug/Logger.hpp"
 
 #ifdef _WIN32
-    #include <windows.h>
+	#include <windows.h>
 #else
-    #include <dlfcn.h>
+	#include <dlfcn.h>
 #endif
 
 static debug::Logger logger("modding");
@@ -208,6 +210,22 @@ namespace modding
 		mod->shutdownFunc = reinterpret_cast<ModShutdownFunc>(
 			getFunction(handle, "mod_shutdown")
 		);
+
+		mod->onWorldOpen = reinterpret_cast<OnWorldOpenFunc>(
+			getFunction(handle, "mod_on_world_open")
+		);
+
+		mod->onWorldClosed = reinterpret_cast<OnWorldClosedFunc>(
+			getFunction(handle, "mod_on_world_closed")
+		);
+
+		mod->onContentLoad = reinterpret_cast<OnContentLoadFunc>(
+			getFunction(handle, "mod_on_content_load")
+		);
+
+		mod->onEngineShutdown = reinterpret_cast<OnEngineShutdownFunc>(
+			getFunction(handle, "mod_on_engine_shutdown")
+		);
 		
 		if (!mod->initFunc) 
 		{
@@ -271,5 +289,45 @@ namespace modding
 		}
 		
 		loadedMods.clear();
+	}
+
+	void ModLoader::broadcastWorldOpen(Level* level, int64_t localPlayer) 
+	{
+		for (auto& mod : loadedMods) 
+		{
+			if (mod->onWorldOpen) {
+				mod->onWorldOpen(level, localPlayer);
+			}
+		}
+	}
+
+	void ModLoader::broadcastWorldClosed() 
+	{
+		for (auto& mod : loadedMods) 
+		{
+			if (mod->onWorldClosed) {
+				mod->onWorldClosed();
+			}
+		}
+	}
+
+	void ModLoader::broadcastContentLoad() 
+	{
+		for (auto& mod : loadedMods) 
+		{
+			if (mod->onContentLoad) {
+				mod->onContentLoad();
+			}
+		}
+	}
+
+	void ModLoader::broadcastEngineShutdown() 
+	{
+		for (auto& mod : loadedMods) 
+		{
+			if (mod->onEngineShutdown) {
+				mod->onEngineShutdown();
+			}
+		}
 	}
 }

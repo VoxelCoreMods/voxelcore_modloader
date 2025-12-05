@@ -25,178 +25,178 @@ class WindowControl;
 struct Project;
 
 namespace gui {
-    class GUI;
+	class GUI;
 }
 
 namespace cmd {
-    class CommandsInterpreter;
+	class CommandsInterpreter;
 }
 
 namespace network {
-    class Network;
+	class Network;
 }
 
 namespace devtools {
-    class Editor;
-    class DebuggingServer;
+	class Editor;
+	class DebuggingServer;
 }
 
 // [[MOD LOADER STUFF]]
 namespace modding {
-    class ModLoader;
+	class ModLoader;
 }
 
 class initialize_error : public std::runtime_error {
 public:
-    initialize_error(const std::string& message) : std::runtime_error(message) {}
+	initialize_error(const std::string& message) : std::runtime_error(message) {}
 };
 
 using OnWorldOpen = std::function<void(std::unique_ptr<Level>, int64_t)>;
 
 class Engine : public util::ObjectsKeeper {
-    CoreParameters params;
-    EngineSettings settings;
-    std::unique_ptr<EnginePaths> paths;
-    std::unique_ptr<Project> project;
-    std::unique_ptr<SettingsHandler> settingsHandler;
-    std::unique_ptr<Assets> assets;
-    std::shared_ptr<Screen> screen;
-    std::unique_ptr<ContentControl> content;
-    std::unique_ptr<EngineController> controller;
-    std::unique_ptr<cmd::CommandsInterpreter> cmd;
-    std::unique_ptr<network::Network> network;
-    std::unique_ptr<Window> window;
-    std::unique_ptr<Input> input;
-    std::unique_ptr<gui::GUI> gui;
-    std::unique_ptr<devtools::Editor> editor;
-    std::unique_ptr<devtools::DebuggingServer> debuggingServer;
-    std::unique_ptr<WindowControl> windowControl;
+	CoreParameters params;
+	EngineSettings settings;
+	std::unique_ptr<EnginePaths> paths;
+	std::unique_ptr<Project> project;
+	std::unique_ptr<SettingsHandler> settingsHandler;
+	std::unique_ptr<Assets> assets;
+	std::shared_ptr<Screen> screen;
+	std::unique_ptr<ContentControl> content;
+	std::unique_ptr<EngineController> controller;
+	std::unique_ptr<cmd::CommandsInterpreter> cmd;
+	std::unique_ptr<network::Network> network;
+	std::unique_ptr<Window> window;
+	std::unique_ptr<Input> input;
+	std::unique_ptr<gui::GUI> gui;
+	std::unique_ptr<devtools::Editor> editor;
+	std::unique_ptr<devtools::DebuggingServer> debuggingServer;
+	std::unique_ptr<WindowControl> windowControl;
 
-    // [[MOD LOADER STUFF]]
-    std::unique_ptr<modding::ModLoader> modLoader;
+	// [[MOD LOADER STUFF]]
+	std::unique_ptr<modding::ModLoader> modLoader;
 
-    PostRunnables postRunnables;
-    Time time;
-    OnWorldOpen levelConsumer;
-    bool quitSignal = false;
-    
-    void loadControls();
-    void loadSettings();
-    void saveSettings();
-    void updateHotkeys();
-    void loadAssets();
-    void loadProject();
+	PostRunnables postRunnables;
+	Time time;
+	OnWorldOpen levelConsumer;
+	bool quitSignal = false;
+	
+	void loadControls();
+	void loadSettings();
+	void saveSettings();
+	void updateHotkeys();
+	void loadAssets();
+	void loadProject();
 
-    // [[MOD LOADER STUFF]]
-    void loadMods();
+	// [[MOD LOADER STUFF]]
+	void loadMods();
 
-    void initializeClient();
-    void onContentLoad();
+	void initializeClient();
+	void onContentLoad();
 public:
-    Engine();
-    ~Engine();
+	Engine();
+	~Engine();
 
-    static Engine& getInstance();
+	static Engine& getInstance();
 
-    void initialize(CoreParameters coreParameters);
-    void close();
+	void initialize(CoreParameters coreParameters);
+	void close();
 
-    static void terminate();
+	static void terminate();
 
-    /// @brief Start the engine
-    void run();
+	/// @brief Start the engine
+	void run();
 
-    void postUpdate();
+	void postUpdate();
 
-    void applicationTick();
-    void updateFrontend();
-    void renderFrame();
-    void nextFrame(bool waitForRefresh);
-    void startPauseLoop();
-    
-    /// @brief Set screen (scene).
-    /// nullptr may be used to delete previous screen before creating new one,
-    /// not-null value must be set before next frame
-    /// @param screen nullable screen
-    void setScreen(std::shared_ptr<Screen> screen);
-    
-    /// @brief Get active assets storage instance
-    Assets* getAssets();
+	void applicationTick();
+	void updateFrontend();
+	void renderFrame();
+	void nextFrame(bool waitForRefresh);
+	void startPauseLoop();
+	
+	/// @brief Set screen (scene).
+	/// nullptr may be used to delete previous screen before creating new one,
+	/// not-null value must be set before next frame
+	/// @param screen nullable screen
+	void setScreen(std::shared_ptr<Screen> screen);
+	
+	/// @brief Get active assets storage instance
+	Assets* getAssets();
 
-    /// @brief Get writeable engine settings structure instance
-    EngineSettings& getSettings();
+	/// @brief Get writeable engine settings structure instance
+	EngineSettings& getSettings();
 
-    /// @brief Get engine filesystem paths source
-    EnginePaths& getPaths();
+	/// @brief Get engine filesystem paths source
+	EnginePaths& getPaths();
 
-    /// @brief Get engine resource paths controller
-    ResPaths& getResPaths();
+	/// @brief Get engine resource paths controller
+	ResPaths& getResPaths();
 
-    void onWorldOpen(std::unique_ptr<Level> level, int64_t localPlayer);
-    void onWorldClosed();
+	void onWorldOpen(std::unique_ptr<Level> level, int64_t localPlayer);
+	void onWorldClosed();
 
-    void quit();
+	void quit();
 
-    bool isQuitSignal() const;
+	bool isQuitSignal() const;
 
-    /// @brief Get current screen
-    std::shared_ptr<Screen> getScreen();
+	/// @brief Get current screen
+	std::shared_ptr<Screen> getScreen();
 
-    /// @brief Enqueue function call to the end of current frame in draw thread
-    void postRunnable(const runnable& callback) {
-        postRunnables.postRunnable(callback);
-    }
+	/// @brief Enqueue function call to the end of current frame in draw thread
+	void postRunnable(const runnable& callback) {
+		postRunnables.postRunnable(callback);
+	}
 
-    EngineController* getController();
+	EngineController* getController();
 
-    void setLevelConsumer(OnWorldOpen levelConsumer);
+	void setLevelConsumer(OnWorldOpen levelConsumer);
 
-    SettingsHandler& getSettingsHandler();
+	SettingsHandler& getSettingsHandler();
 
-    Time& getTime();
+	Time& getTime();
 
-    const CoreParameters& getCoreParameters() const;
+	const CoreParameters& getCoreParameters() const;
 
-    bool isHeadless() const;
+	bool isHeadless() const;
 
-    ContentControl& getContentControl();
+	ContentControl& getContentControl();
 
-    gui::GUI& getGUI() {
-        return *gui;
-    }
+	gui::GUI& getGUI() {
+		return *gui;
+	}
 
-    Input& getInput() {
-        return *input;
-    }
+	Input& getInput() {
+		return *input;
+	}
 
-    Window& getWindow() {
-        return *window;
-    }
+	Window& getWindow() {
+		return *window;
+	}
 
-    network::Network& getNetwork() {
-        return *network;
-    }
+	network::Network& getNetwork() {
+		return *network;
+	}
 
-    cmd::CommandsInterpreter& getCmd() {
-        return *cmd;
-    }
+	cmd::CommandsInterpreter& getCmd() {
+		return *cmd;
+	}
 
-    devtools::Editor& getEditor() {
-        return *editor;
-    }
+	devtools::Editor& getEditor() {
+		return *editor;
+	}
 
-    const Project& getProject() {
-        return *project;
-    }
+	const Project& getProject() {
+		return *project;
+	}
 
-    devtools::DebuggingServer* getDebuggingServer() {
-        return debuggingServer.get();
-    }
+	devtools::DebuggingServer* getDebuggingServer() {
+		return debuggingServer.get();
+	}
 
-    // [[MOD LOADER STUFF]]
-    modding::ModLoader& getModLoader() {
-        return *modLoader;
-    }
+	// [[MOD LOADER STUFF]]
+	modding::ModLoader& getModLoader() {
+		return *modLoader;
+	}
 
-    void detachDebugger();
+	void detachDebugger();
 };

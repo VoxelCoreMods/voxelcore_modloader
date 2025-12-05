@@ -1,0 +1,1 @@
+/usr/bin/c++ -no-pie CMakeFiles/vctest.dir/main.cpp.o -o vctest 

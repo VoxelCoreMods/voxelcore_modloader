@@ -1,0 +1,125 @@
+# Umumiy
+Yes=Ha
+No=Yo'q
+Ok=Ок
+Cancel=Bekor qilish
+Back=Orqaga
+Continue=Davom etish
+Add=Qo'shish
+Version=Versiya
+Creator=Muallif
+Dependencies=Bog'liqliklar
+Description=Tavsif
+Converting world...=Dunyo konvertatsiya qilinmoqda...
+Unlimited=Cheksiz
+Chat=Chat
+Console=Konsol
+Log=Log
+Problems=Muammolar
+Monitor=Monitoring
+Debug=Tuzatish
+File=Fayl
+Read only="Faqat o‘qish uchun
+Save=Saqlash
+Grant %{0} pack modification permission?=%{0} to‘plamini o‘zgartirish ruxsatini berilsinmi?
+Error at line %{0}=%{0}-qatorida xatolik
+Run=Ishga tushirish
+Are you sure you want to open the link: =Haqiqatan ham havolani ochmoqchimisiz: 
+
+editor.info.tooltip=CTRL+S - Saqlash\nCTRL+R - Ishga tushirish\nCTRL+Z - Bekor qilish\nCTRL+Y - Qayta bajarish
+devtools.traceback=Chaqiruvlar steki (so`nggisidan boshlab)
+devtools.output=Natija(Output)
+
+error.pack-not-found=Paketni topib bo'lmadi
+error.dependency-not-found=Amaldagi qaramliklar topilmadi
+pack.remove-confirm=Paketlar bilan taqdim etilgan barcha contentni dunyodan olib tashlash (qaytarib bo'lmaydi)?
+
+# Maslahatlar
+graphics.gamma.tooltip=Yorug'lik yorqinligi egri chizig'i
+graphics.backlight.tooltip=To'liq zulmatni oldini oladigan orqa yorug'ligi
+graphics.dense-render.tooltip=Bloklar, masalan, barglar uchun shaffoflikni yoqadi.
+
+# Menyu
+menu.Apply=Qo'llash
+menu.Audio=Tovush
+menu.Back to Main Menu=Menyuga qaytish
+menu.Scripts=Ssenariylar
+menu.Content Error=Kontent Xatosi
+menu.Content=Kontent
+menu.Continue=Davom ettirish
+menu.Controls=Boshqaruv
+menu.Display=Displey
+menu.Graphics=Grafika
+menu.missing-content=Kontent mavjud emas!
+menu.New World=Yangi Dunyo
+menu.Open worlds folder=Dunyolar papkasini ochish
+menu.Worlds=Dunyolar
+menu.Page not found=Sahifa topilmadi
+menu.Quit=Chiqish
+menu.Mods=Modlari
+menu.Save and Quit to Menu=Saqlash va Menyuga chiqish
+menu.Settings=Sozlamalar
+menu.Reset settings=Sozlamalarni tiklash
+menu.Contents Menu=Kontent paklar menyusi
+menu.Open data folder=Ma'lumotlar papkasini ochish
+menu.Open content folder=[content] papkasini ochish
+
+world.Seed=Don
+world.Name=Nom
+world.World generator=Dunyo generatori
+world.generators.default=Standart bo'yicha
+world.generators.flat=Tekis
+world.Create World=Dunyo yaratish
+world.convert-request=Indekslar bo'yicha o'zgarishlar bor! Dunyoni konvertatsiya qilasizmi?
+world.upgrade-request=Dunyo formati eskirgan! Dunyoni konvertatsiya qilasizmi?
+world.convert-with-loss=Dunyoni yo'qotishlar bilan konvertatsiya qilasizmi?
+world.convert-block-layouts=Blok maydonlarida o'zgarishlar bor! Dunyoni konvertatsiya qilasizmi?
+world.delete-confirm=Dunyoni doimiy o'chirasizmi?
+
+# Sozlamalar
+settings.Ambient=Fon
+settings.Backlight=Yoritish
+settings.Dense blocks render=Bloklarning zich render qilinishi
+settings.Camera Shaking=Kamera titrashi
+settings.Camera Inertia=Kamera inertsiyasi
+settings.Camera FOV Effects=Ko'rish maydoni effektlari
+settings.Fog Curve=Tuman egri chizig'i
+settings.FOV=Ko'rish maydoni
+settings.Fullscreen=To'liq ekran
+settings.Framerate=Kadrlar chastotasi
+settings.Gamma=Gamma
+settings.Language=Til
+settings.Load Distance=Yuklash masofasi
+settings.Load Speed=Yuklash tezligi
+settings.Master Volume=Umumiy ovoz balansi
+settings.Mouse Sensitivity=Sichqoncha sezgirligi
+settings.Music=Musiqa
+settings.Regular Sounds=Oddiy tovushlar
+settings.UI Sounds=Interfeys tovushlari
+settings.V-Sync=Vertikal sinxronizatsiya
+settings.Key=Tugma
+settings.Controls Search Mode=Tayinlangan boshqaruv tugmasi bo'yicha qidirish
+settings.Limit Background FPS=Fon kadrlar chastotasini cheklash
+
+# Boshqaruv
+chunks.reload=Chanklarni qayta yuklash
+devtools.console=Konsol
+movement.forward=Oldinga
+movement.back=Orqaga
+movement.left=Chapga
+movement.right=O'ngga
+movement.jump=Sakrash
+movement.sprint=Tez yugurish
+movement.crouch=Egilish
+movement.cheat=Hiyla (Chit)
+hud.inventory=Inventar
+hud.chat=Chat
+player.pick=Blokni olish
+player.attack=Hujum qilish
+player.destroy=Sindirish
+player.build=Blokni qo'yish
+player.fast_interaction=Tezkor o'zaro ta'sir
+player.flight=Parvoz
+player.drop=Narsani tashlash
+camera.zoom=Yaqinlashish
+camera.mode=Kamera Rejimini O'zgartiring

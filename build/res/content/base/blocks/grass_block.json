@@ -1,0 +1,15 @@
+{
+    "material": "base:grass_block",
+    "texture-faces": [
+        "grass_side",
+        "grass_side",
+        "dirt",
+        "grass_top",
+        "grass_side",
+        "grass_side"
+    ],
+    "base:durability": 1.7,
+    "base:loot": [
+        {"item": "base:dirt.item"}
+    ]
+}

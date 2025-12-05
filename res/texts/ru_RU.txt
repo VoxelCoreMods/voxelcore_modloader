@@ -60,6 +60,7 @@ menu.Open worlds folder=Открыть папку с мирами
 menu.Worlds=Миры
 menu.Page not found=Страница не найдена
 menu.Quit=Выход
+menu.Mods=Моды
 menu.Save and Quit to Menu=Сохранить и Выйти в Меню
 menu.Settings=Настройки
 menu.Reset settings=Сбросить настройки

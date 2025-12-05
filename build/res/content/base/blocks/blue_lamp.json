@@ -1,0 +1,7 @@
+{
+    "texture": "blue_lamp",
+    "emission": [0, 0, 15],
+    "shadeless": true,
+    "material": "base:glass",
+    "base:durability": 0.3
+}

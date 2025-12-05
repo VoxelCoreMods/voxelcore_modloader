@@ -1,0 +1,36 @@
+<container color='#00000080' size='400' size-func="unpack(gui.get_viewport())">
+    <panel interval="0"
+           orientation="horizontal"
+           color="#00000010"
+           size-func="gui.get_viewport()[1],30">
+        <button id="s_chat" size="110,30" onclick="modes:set('chat')">@Chat</button>
+        <button id="s_console" size="110,30" onclick="modes:set('console')">@Console</button>
+        <button id="s_debug" size="110,30" onclick="modes:set('debug')">@Debug</button>
+    </panel>
+    
+    <container id="logContainer" pos="0,60"
+               size-func="unpack(vec2.add(gui.get_viewport(), {-450,-100}))">
+        <textbox 
+            id='log' 
+            color='0'
+            autoresize='true' 
+            margin='0'
+            editable='false' 
+            multiline='true' 
+            size-func="-1,40"
+            gravity="bottom-left"
+            markup="md"
+        ></textbox>
+    </container>
+    <iframe id="editorRoot" pos="0,30" size-func="-1,gui.get_viewport()[2]-30">
+    </iframe>
+    <textbox id='prompt' 
+             consumer='submit' 
+             margin='0' 
+             markup="md"
+             gravity='bottom-left' 
+             size-func="gui.get_viewport()[1],40"
+             onup="on_history_up()"
+             ondown="on_history_down()">
+    </textbox>
+</container>

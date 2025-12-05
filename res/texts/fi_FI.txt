@@ -48,6 +48,7 @@ menu.Page not found=Sivu ei löytynyt!
 menu.Quit=Poistu
 menu.Save and Quit to Menu=Tallenna ja Takaisin Valikkoon
 menu.Settings=Asetukset
+menu.Mods=Mods
 menu.Reset settings=Palauta asetukset
 menu.Contents Menu=Sisältöpaketin valikko
 menu.Open data folder=Avaa data-kansio

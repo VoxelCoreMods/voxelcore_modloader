@@ -16,6 +16,11 @@ namespace modding
 	using ModInitFunc = void (*)(Engine&);
 	using ModShutdownFunc = void (*)();
 
+	using OnWorldOpenFunc = void (*)(Level*, int64_t localPlayer);
+	using OnWorldClosedFunc = void (*)();
+	using OnContentLoadFunc = void (*)();
+	using OnEngineShutdownFunc = void (*)();
+
 	struct ModInfo {
 		std::string name;
 		std::string version;
@@ -32,6 +37,11 @@ namespace modding
 	public:
 		ModInitFunc initFunc = nullptr;
 		ModShutdownFunc shutdownFunc = nullptr;
+		
+		OnWorldOpenFunc onWorldOpen = nullptr;
+		OnWorldClosedFunc onWorldClosed = nullptr;
+		OnContentLoadFunc onContentLoad = nullptr;
+		OnEngineShutdownFunc onEngineShutdown = nullptr;
 
 		LoadedMod(void* handle, ModInfo info);
 		~LoadedMod();
@@ -83,5 +93,13 @@ namespace modding
 		
 		/// @brief Get number of loaded mods
 		size_t getModCount() const { return loadedMods.size(); }
+
+		/// @brief Broadcast world events to all mods
+		/// @param level 
+		/// @param localPlayer 
+		void broadcastWorldOpen(Level* level, int64_t localPlayer);
+		void broadcastWorldClosed();
+		void broadcastContentLoad();
+		void broadcastEngineShutdown();
 	};
 }

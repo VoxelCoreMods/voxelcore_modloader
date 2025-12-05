@@ -1,0 +1,9 @@
+/home/alex/Documents/vxcprojects/voxelcore_modloader/build/CMakeFiles/VoxelEngine.dir
+/home/alex/Documents/vxcprojects/voxelcore_modloader/build/CMakeFiles/edit_cache.dir
+/home/alex/Documents/vxcprojects/voxelcore_modloader/build/CMakeFiles/rebuild_cache.dir
+/home/alex/Documents/vxcprojects/voxelcore_modloader/build/src/CMakeFiles/VoxelEngineSrc.dir
+/home/alex/Documents/vxcprojects/voxelcore_modloader/build/src/CMakeFiles/edit_cache.dir
+/home/alex/Documents/vxcprojects/voxelcore_modloader/build/src/CMakeFiles/rebuild_cache.dir
+/home/alex/Documents/vxcprojects/voxelcore_modloader/build/vctest/CMakeFiles/vctest.dir
+/home/alex/Documents/vxcprojects/voxelcore_modloader/build/vctest/CMakeFiles/edit_cache.dir
+/home/alex/Documents/vxcprojects/voxelcore_modloader/build/vctest/CMakeFiles/rebuild_cache.dir

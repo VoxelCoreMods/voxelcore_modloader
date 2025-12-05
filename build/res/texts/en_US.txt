@@ -1,0 +1,51 @@
+# Menu
+menu.missing-content=Missing Content!
+world.convert-request=Content indices have changed! Convert world files?
+world.upgrade-request=World format is outdated! Convert world files?
+world.convert-with-loss=Convert world with data loss?
+world.convert-block-layouts=Blocks fields have changes! Convert world files?
+pack.remove-confirm=Do you want to erase all pack(s) content from the world forever?
+error.pack-not-found=Could not to find pack
+error.dependency-not-found=Dependency pack is not found
+error.dependency-version-not-met=Dependency pack version is not met.
+world.delete-confirm=Do you want to delete world forever?
+world.generators.default=Default
+world.generators.flat=Flat
+
+editor.info.tooltip=CTRL+S - Save\nCTRL+R - Run\nCTRL+Z - Undo\nCTRL+Y - Redo
+devtools.traceback=Traceback (most recent call first)
+devtools.output=Output
+
+# Tooltips
+graphics.gamma.tooltip=Lighting brightness curve
+graphics.backlight.tooltip=Backlight to prevent total darkness
+graphics.dense-render.tooltip=Enables transparency in blocks like leaves
+graphics.soft-lighting.tooltip=Enables blocks soft lighting
+
+# settings
+settings.Controls Search Mode=Search by attached button name
+settings.Conflict=Possible conflicts found
+
+# Bindings
+chunks.reload=Reload Chunks
+devtools.console=Console
+movement.forward=Forward
+movement.back=Back
+movement.left=Left
+movement.right=Right
+movement.jump=Jump
+movement.sprint=Sprint
+movement.crouch=Crouch
+movement.cheat=Cheat
+hud.inventory=Inventory
+hud.chat=Chat
+player.pick=Pick Block
+player.attack=Attack
+player.destroy=Destroy
+player.build=Place Block
+player.fast_interaction=Accelerated interaction
+player.flight=Flight
+player.noclip=No-clip
+player.drop=Drop Item
+camera.zoom=Zoom
+camera.mode=Switch Camera Mode

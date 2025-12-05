@@ -4,6 +4,4 @@ This is a simple mod loader for VoxelCore
 
 You can create your own C++ native mods for this game engine
 
-check 'mod_examples' for got more information about modding
-
-Other mods here: https://github.com/orgs/VoxelCoreMods/repositories
+Mod examples here: https://github.com/orgs/VoxelCoreMods/repositories

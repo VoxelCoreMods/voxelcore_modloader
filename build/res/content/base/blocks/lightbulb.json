@@ -1,0 +1,13 @@
+{
+    "caption": "light bulb",
+    "texture": "lightbulb",
+    "emission": [15, 14, 13],
+    "model": "aabb",
+    "hitbox": [0.25, 0.0, 0.25, 0.5, 0.5, 0.5],
+    "rotation": "pipe",
+    "light-passing": true,
+    "sky-light-passing": true,
+    "shadeless": true,
+    "material": "base:glass",
+    "base:durability": 0.2
+}
