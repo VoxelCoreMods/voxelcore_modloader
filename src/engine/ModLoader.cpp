@@ -11,6 +11,9 @@
 	#include <dlfcn.h>
 #endif
 
+#include "graphics/ui/GUI.hpp"
+#include "graphics/ui/gui_util.hpp"
+
 static debug::Logger logger("modding");
 
 namespace modding 
@@ -329,5 +332,19 @@ namespace modding
 				mod->onEngineShutdown();
 			}
 		}
+	}
+
+	void ModLoader::create_version_label(gui::GUI& gui) 
+	{
+		 std::string mlText = "VoxelCoreMods/voxelcore_modloader v" + std::string(MOD_LOADER_VERSION);
+    
+		auto modloaderLabel = guiutil::create(
+			gui,
+			"<label z-index='1000' color='#ffd000f8' gravity='top-left' "
+			"margin='4' cursor='pointer'>" +
+			mlText + "</label>"
+		);
+		
+		gui.add(modloaderLabel);
 	}
 }

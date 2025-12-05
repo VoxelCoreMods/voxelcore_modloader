@@ -687,7 +687,7 @@ pkgcfg_lib_luajit_luajit-5.1-ADVANCED:INTERNAL=1
 pkgcfg_lib_vorbis_vorbis-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib_vorbisfile_vorbisfile
 pkgcfg_lib_vorbisfile_vorbisfile-ADVANCED:INTERNAL=1
-prefix_result:INTERNAL=AsynchDNS;GSS-API;HSTS;HTTP2;HTTPS-proxy;IDN;IPv6;Kerberos;Largefile;NTLM;PSL;SPNEGO;SSL;TLS-SRP;UnixSockets;alt-svc;brotli;libz;threadsafe;zstd
+prefix_result:INTERNAL=/usr/lib/x86_64-linux-gnu
 vorbis_CFLAGS:INTERNAL=-I/usr/include
 vorbis_CFLAGS_I:INTERNAL=
 vorbis_CFLAGS_OTHER:INTERNAL=

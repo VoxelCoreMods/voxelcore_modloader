@@ -377,4 +377,6 @@ src/CMakeFiles/VoxelEngineSrc.dir/engine/ModLoader.cpp.o: \
  /home/alex/Documents/vxcprojects/voxelcore_modloader/src/io/path.hpp \
  /home/alex/Documents/vxcprojects/voxelcore_modloader/src/debug/Logger.hpp \
  /usr/include/dlfcn.h /usr/include/x86_64-linux-gnu/bits/dlfcn.h \
- /usr/include/x86_64-linux-gnu/bits/dl_find_object.h
+ /usr/include/x86_64-linux-gnu/bits/dl_find_object.h \
+ /home/alex/Documents/vxcprojects/voxelcore_modloader/src/graphics/ui/GUI.hpp \
+ /home/alex/Documents/vxcprojects/voxelcore_modloader/src/graphics/ui/gui_util.hpp

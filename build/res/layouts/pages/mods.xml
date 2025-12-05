@@ -1,7 +1,6 @@
-<container size='668,418' color='#0F1E2DB2' context='menu'>
-    <panel margin='6' gravity='bottom-left' size='250' color='0' interval='1'>
-        <panel id='mods_add' pos='485,34' size='440,455' color='0' max-length='455' scrollable='true'>  
-        </panel>  
-        <button onclick='menu:back()'>@Back</button>
+<panel size='400' color='0' interval='1' context='menu'>
+    <panel id='mods_add' size='390,1' padding='5' color='#FFFFFF11' max-length='400'>
     </panel>
-</container>
+    <button pos='485,525' size='500,40' onclick='core.open_folder("user:mods")'>@Open mods folder</button>
+    <button onclick='menu:back()'>@Back</button>
+</panel>

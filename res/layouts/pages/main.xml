@@ -5,8 +5,4 @@
 	<button onclick='menu.page="content_menu"'>@Content</button>
 	<button onclick='menu.page="mods"'>@Mods</button>
 	<button onclick='core.quit()'>@Quit</button>
-
-	<textbox pos='10,370' size='480,30' padding="4" multiline='false' readonly='true' align='center' color='#00000080'>
-		VoxelCoreMods/voxelcore_modloader [v0.2]
-	</textbox>	
 </panel>

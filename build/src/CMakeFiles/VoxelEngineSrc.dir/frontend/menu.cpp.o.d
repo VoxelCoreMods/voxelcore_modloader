@@ -402,4 +402,5 @@ src/CMakeFiles/VoxelEngineSrc.dir/frontend/menu.cpp.o: \
  /usr/include/c++/13/typeindex \
  /home/alex/Documents/vxcprojects/voxelcore_modloader/src/graphics/core/TextureAnimation.hpp \
  /home/alex/Documents/vxcprojects/voxelcore_modloader/src/content/ContentPack.hpp \
- /home/alex/Documents/vxcprojects/voxelcore_modloader/src/content/content_fwd.hpp
+ /home/alex/Documents/vxcprojects/voxelcore_modloader/src/content/content_fwd.hpp \
+ /home/alex/Documents/vxcprojects/voxelcore_modloader/src/engine/ModLoader.hpp

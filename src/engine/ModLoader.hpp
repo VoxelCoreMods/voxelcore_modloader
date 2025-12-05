@@ -5,6 +5,8 @@
 #include <memory>
 #include <functional>
 
+#define MOD_LOADER_VERSION "0.2.1"
+
 namespace io {
     class path;
 }
@@ -70,6 +72,8 @@ namespace modding
 	public:
 		ModLoader() = default;
 		~ModLoader();
+
+		void create_version_label(gui::GUI& gui);
 
 		/// @brief Load all mods from the specified directory
 		/// @param modsPath Path to the mods directory

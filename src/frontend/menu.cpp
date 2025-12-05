@@ -19,6 +19,7 @@
 #include "util/stringutil.hpp"
 #include "assets/assetload_funcs.hpp"
 #include "content/ContentPack.hpp"
+#include "engine/ModLoader.hpp"
 
 using namespace gui;
 
@@ -30,6 +31,10 @@ void menus::create_version_label(gui::GUI& gui) {
         "margin='4'>" +
         text + "</label>"
     ));
+
+    auto engine = &gui.getEngine();
+    auto modLoader = &engine->getModLoader();
+    modLoader->create_version_label(gui);
 }
 
 void menus::call(Engine& engine, runnable func) {
