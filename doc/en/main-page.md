@@ -1,6 +1,9 @@
 # Documentation
 
-Documentation for 0.30.
+Documentation for 0.31.
+
+> [!WARNING]
+> Version is in development. Proceed to [Documentation for 0.30.](https://github.com/MihailRis/voxelcore/blob/release-0.30/doc/en/main-page.md)
 
 ## Sections
 

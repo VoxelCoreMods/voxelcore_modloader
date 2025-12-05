@@ -160,12 +160,6 @@ static void initialize_block(
     block_register_events.push_back(BlockRegisterEvent {
         static_cast<uint8_t>(bits | 1), def.rt.id, {x, y, z}
     });
-
-    if (def.rt.funcsset.onblocktick) {
-        block_register_events.push_back(BlockRegisterEvent {
-            bits, def.rt.id, {x, y, z}
-        });
-    }
 }
 
 template <class Storage>

@@ -58,7 +58,7 @@ static void check_voxels(const ContentIndices& indices, Chunk& chunk) {
                 abort();
 #endif
             }
-            chunk.voxels[i].id = BLOCK_AIR;
+            chunk.voxels[i] = {};
         }
     }
 }
