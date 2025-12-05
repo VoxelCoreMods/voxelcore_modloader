@@ -1,315 +1,96 @@
-[I] 2025/12/04 03:04:50.228+1000 [              engine] engine version: 0.30
-[I] 2025/12/04 03:04:50.228+1000 [        engine-paths] executable path: /home/alex/Documents/vxcprojects/voxelcore_modloader/build/VoxelEngine
-[I] 2025/12/04 03:04:50.228+1000 [        engine-paths] resources folder: /home/alex/Documents/vxcprojects/voxelcore_modloader/res
-[I] 2025/12/04 03:04:50.228+1000 [        engine-paths] user files folder: /home/alex/Documents/vxcprojects/voxelcore_modloader
-[I] 2025/12/04 03:04:50.228+1000 [        engine-paths] project folder: /home/alex/Documents/vxcprojects/voxelcore_modloader/res
-[I] 2025/12/04 03:04:50.228+1000 [              engine] loaded project "default"
-[I] 2025/12/04 03:04:50.229+1000 [              engine] loading settings
-[I] 2025/12/04 03:04:50.573+1000 [              window] max texture size is 32768
-[I] 2025/12/04 03:04:50.574+1000 [              window] monitor content scale: 1x1
-[I] 2025/12/04 03:04:50.576+1000 [              window] max texture size is 32768
-[I] 2025/12/04 03:04:50.576+1000 [              window] GL Vendor: NVIDIA Corporation
-[I] 2025/12/04 03:04:50.576+1000 [              window] GL Renderer: NVIDIA GeForce RTX 2070/PCIe/SSE2
-[I] 2025/12/04 03:04:50.576+1000 [              window] GLFW: 3.3.10 X11 GLX EGL OSMesa clock_gettime evdev shared
-[I] 2025/12/04 03:04:50.576+1000 [              engine] loading controls
-[I] 2025/12/04 03:04:50.577+1000 [               audio] initializing ALAudio backend
-[I] 2025/12/04 03:04:50.605+1000 [            al-audio] initialized
-[I] 2025/12/04 03:04:50.605+1000 [            al-audio] max mono sources: 255
-[I] 2025/12/04 03:04:50.605+1000 [            al-audio] output devices:
-[I] 2025/12/04 03:04:50.605+1000 [            al-audio]   Built-in Audio Analog Stereo
-[I] 2025/12/04 03:04:50.605+1000 [            al-audio]   TU106 High Definition Audio Controller Digital Stereo (HDMI)
-[I] 2025/12/04 03:04:50.605+1000 [            al-audio] input devices:
-[I] 2025/12/04 03:04:50.605+1000 [            al-audio]   Fifine Microphone Mono
-[I] 2025/12/04 03:04:50.605+1000 [            al-audio]   Monitor of Built-in Audio Analog Stereo
-[I] 2025/12/04 03:04:50.605+1000 [            al-audio]   Built-in Audio Analog Stereo
-[I] 2025/12/04 03:04:50.605+1000 [            al-audio]   Monitor of TU106 High Definition Audio Controller Digital Stereo (HDMI)
-[I] 2025/12/04 03:04:50.610+1000 [           lua-state] Lua 5.1
-[I] 2025/12/04 03:04:50.610+1000 [           lua-state] LuaJIT 2.1.1703358377
-[I] 2025/12/04 03:04:50.615+1000 [              locale] locales fi_FI uk_UA uz_UZ pl_PL ru_RU en_US de_DE be_BY added
-[I] 2025/12/04 03:04:50.616+1000 [               audio] setting input device to 
-[W] 2025/12/04 03:04:50.622+1000 [             project] project start script does not exists
-[I] 2025/12/04 03:04:50.622+1000 [             project] starting project client script
-[I] 2025/12/04 03:04:50.622+1000 [              engine] initializing mod loader
-[I] 2025/12/04 03:04:50.622+1000 [             modding] scanning mods directory: user:mods
-[I] 2025/12/04 03:04:50.623+1000 [             modding] loading mod from: ./mods/libmodsinformer.so
-[I] 2025/12/04 03:04:50.623+1000 [             modding] initializing mod: ModsInformer
-[I] 2025/12/04 03:04:50.623+1000 [             modding] successfully loaded mod: ModsInformer v1.0.0 by VoxelCoreMods
-[I] 2025/12/04 03:04:50.623+1000 [             modding] loading mod from: ./mods/libVintageSurvival.so
-[I] 2025/12/04 03:04:50.623+1000 [             modding] initializing mod: VintageSurvival
-[I] 2025/12/04 03:04:50.623+1000 [             modding] successfully loaded mod: VintageSurvival v2512.1 by VoxelCoreMods
-[I] 2025/12/04 03:04:50.623+1000 [             modding] loading mod from: ./mods/libmy_first_mod.so
-[I] 2025/12/04 03:04:50.623+1000 [             modding] initializing mod: My First Mod
-[I] 2025/12/04 03:04:50.623+1000 [             modding] successfully loaded mod: My First Mod v1.0.0 by VoxelCoreMods
-[I] 2025/12/04 03:04:50.623+1000 [             modding] loaded 3 mod(s)
-[I] 2025/12/04 03:04:50.623+1000 [              engine] mod loading complete: 3 mod(s) loaded
-[I] 2025/12/04 03:04:50.623+1000 [            mainloop] starting menu screen
-[I] 2025/12/04 03:04:50.623+1000 [           lua-debug] cleaning scripts cache
-[I] 2025/12/04 03:04:50.623+1000 [           lua-debug] no non-reset packs
-[I] 2025/12/04 03:04:50.624+1000 [              locale] locales fi_FI uk_UA uz_UZ pl_PL ru_RU en_US de_DE be_BY added
-[I] 2025/12/04 03:04:50.625+1000 [              engine] loading bindings: res:config/bindings.toml
-[I] 2025/12/04 03:04:50.626+1000 [              engine] loading bindings: project:content/base/config/bindings.toml
-[I] 2025/12/04 03:04:50.626+1000 [              engine] loading assets
-[I] 2025/12/04 03:04:50.626+1000 [       assets-loader] loading textures/blocks as blocks
-[I] 2025/12/04 03:04:50.637+1000 [       assets-loader] loading textures/items as items
-[I] 2025/12/04 03:04:50.638+1000 [       assets-loader] loading textures/particles as particles
-[I] 2025/12/04 03:04:50.639+1000 [       assets-loader] loading fonts/font as normal
-[I] 2025/12/04 03:04:50.656+1000 [       assets-loader] loading shaders/ui as ui
-[I] 2025/12/04 03:04:50.656+1000 [       assets-loader] loading shaders/ui3d as ui3d
-[I] 2025/12/04 03:04:50.656+1000 [       assets-loader] loading shaders/main as main
-[I] 2025/12/04 03:04:50.657+1000 [       assets-loader] loading shaders/lines as lines
-[I] 2025/12/04 03:04:50.657+1000 [       assets-loader] loading shaders/entity as entity
-[I] 2025/12/04 03:04:50.657+1000 [       assets-loader] loading shaders/translucent as translucent
-[I] 2025/12/04 03:04:50.658+1000 [       assets-loader] loading shaders/background as background
-[I] 2025/12/04 03:04:50.658+1000 [       assets-loader] loading shaders/skybox_gen as skybox_gen
-[I] 2025/12/04 03:04:50.659+1000 [       assets-loader] loading shaders/shadows as shadows
-[I] 2025/12/04 03:04:50.659+1000 [       assets-loader] loading textures/gui/menubg as gui/menubg
-[I] 2025/12/04 03:04:50.659+1000 [       assets-loader] loading textures/gui/delete_icon as gui/delete_icon
-[I] 2025/12/04 03:04:50.659+1000 [       assets-loader] loading textures/gui/no_icon as gui/no_icon
-[I] 2025/12/04 03:04:50.660+1000 [       assets-loader] loading textures/gui/no_world_icon as gui/no_world_icon
-[I] 2025/12/04 03:04:50.660+1000 [       assets-loader] loading textures/gui/warning as gui/warning
-[I] 2025/12/04 03:04:50.661+1000 [       assets-loader] loading textures/gui/error as gui/error
-[I] 2025/12/04 03:04:50.661+1000 [       assets-loader] loading textures/gui/cross as gui/cross
-[I] 2025/12/04 03:04:50.661+1000 [       assets-loader] loading textures/gui/refresh as gui/refresh
-[I] 2025/12/04 03:04:50.661+1000 [       assets-loader] loading textures/gui/folder_icon as gui/folder_icon
-[I] 2025/12/04 03:04:50.662+1000 [       assets-loader] loading textures/gui/settings_icon as gui/settings_icon
-[I] 2025/12/04 03:04:50.662+1000 [       assets-loader] loading textures/misc/rain as misc/rain
-[I] 2025/12/04 03:04:50.668+1000 [       assets-loader] loading textures/misc/snow as misc/snow
-[I] 2025/12/04 03:04:50.669+1000 [       assets-loader] loading textures/gui/check_mark as gui/check_mark
-[I] 2025/12/04 03:04:50.669+1000 [       assets-loader] loading textures/gui/left_arrow as gui/left_arrow
-[I] 2025/12/04 03:04:50.670+1000 [       assets-loader] loading textures/gui/right_arrow as gui/right_arrow
-[I] 2025/12/04 03:04:50.670+1000 [       assets-loader] loading textures/gui/lock as gui/lock
-[I] 2025/12/04 03:04:50.670+1000 [       assets-loader] loading textures/gui/save as gui/save
-[I] 2025/12/04 03:04:50.670+1000 [       assets-loader] loading textures/gui/block as gui/block
-[I] 2025/12/04 03:04:50.671+1000 [       assets-loader] loading textures/gui/item as gui/item
-[I] 2025/12/04 03:04:50.671+1000 [       assets-loader] loading textures/gui/file as gui/file
-[I] 2025/12/04 03:04:50.671+1000 [       assets-loader] loading textures/gui/module as gui/module
-[I] 2025/12/04 03:04:50.671+1000 [       assets-loader] loading textures/gui/play as gui/play
-[I] 2025/12/04 03:04:50.671+1000 [       assets-loader] loading textures/gui/info as gui/info
-[I] 2025/12/04 03:04:50.671+1000 [       assets-loader] loading textures/gui/world as gui/world
-[I] 2025/12/04 03:04:50.671+1000 [       assets-loader] loading textures/gui/hud as gui/hud
-[I] 2025/12/04 03:04:50.671+1000 [       assets-loader] loading textures/gui/entity as gui/entity
-[I] 2025/12/04 03:04:50.672+1000 [       assets-loader] loading textures/gui/half_block as gui/half_block
-[I] 2025/12/04 03:04:50.672+1000 [       assets-loader] loading models/block as block
-[I] 2025/12/04 03:04:50.672+1000 [     assetload-funcs] store model "block" as "block"
-[I] 2025/12/04 03:04:50.672+1000 [       assets-loader] loading shaders/effects/default as default
-[I] 2025/12/04 03:04:50.672+1000 [       assets-loader] loading shaders/effects/ssao as ssao
-[I] 2025/12/04 03:04:50.672+1000 [       assets-loader] loading shaders/effects/deferred_lighting as deferred_lighting
-[I] 2025/12/04 03:04:50.675+1000 [            mainloop] main loop started
-[I] 2025/12/04 03:06:04.470+1000 [           scripting] script (layout) core:layouts/pages/worlds.xml.lua
-[W] 2025/12/04 03:06:04.484+1000 [              window] GL:PERFORMANCE:MEDIUM: Program/shader state performance warning: Vertex shader in program 3 is being recompiled based on GL state.
-[I] 2025/12/04 03:06:09.299+1000 [      content-loader] loading pack [core]
-[I] 2025/12/04 03:06:09.301+1000 [      content-loader] loading pack [base]
-[D] 2025/12/04 03:06:09.302+1000 [    generator-loader] loading voxel fragment project:content/base/generators/demo.files/fragments/tree0.vox
-[I] 2025/12/04 03:06:09.302+1000 [    generator-loader] fragment tree0 has size [6, 9, 8]
-[D] 2025/12/04 03:06:09.302+1000 [    generator-loader] loading voxel fragment project:content/base/generators/demo.files/fragments/tree1.vox
-[I] 2025/12/04 03:06:09.302+1000 [    generator-loader] fragment tree1 has size [7, 12, 9]
-[D] 2025/12/04 03:06:09.302+1000 [    generator-loader] loading voxel fragment project:content/base/generators/demo.files/fragments/tree2.vox
-[I] 2025/12/04 03:06:09.303+1000 [    generator-loader] fragment tree2 has size [7, 16, 6]
-[D] 2025/12/04 03:06:09.303+1000 [    generator-loader] loading voxel fragment project:content/base/generators/demo.files/fragments/tower.vox
-[I] 2025/12/04 03:06:09.303+1000 [    generator-loader] fragment tower has size [8, 18, 8]
-[D] 2025/12/04 03:06:09.303+1000 [    generator-loader] loading voxel fragment project:content/base/generators/demo.files/fragments/coal_ore0.vox
-[I] 2025/12/04 03:06:09.303+1000 [    generator-loader] fragment coal_ore0 has size [4, 4, 4]
-[I] 2025/12/04 03:06:09.309+1000 [           scripting] script (block) project:content/base/scripts/wooden_door.lua
-[I] 2025/12/04 03:06:09.309+1000 [           scripting] script (block) project:content/base/scripts/grass_block.lua
-[I] 2025/12/04 03:06:09.309+1000 [           scripting] script (block) project:content/base/scripts/sand.lua
-[I] 2025/12/04 03:06:09.309+1000 [           scripting] script (item) project:content/base/scripts/bazalt_breaker.lua
-[I] 2025/12/04 03:06:09.309+1000 [           scripting] script (world) project:content/base/scripts/world.lua
-[I] 2025/12/04 03:06:09.310+1000 [           scripting] script (component) project:content/base/scripts/components/player_animator.lua
-[I] 2025/12/04 03:06:09.310+1000 [           scripting] script (component) project:content/base/scripts/components/drop.lua
-[I] 2025/12/04 03:06:09.310+1000 [           scripting] script (component) project:content/base/scripts/components/falling_block.lua
-[I] 2025/12/04 03:06:09.310+1000 [           scripting] script (world) res:scripts/world.lua
-[I] 2025/12/04 03:06:09.310+1000 [           scripting] script (component) res:scripts/components/pathfinding.lua
-[I] 2025/12/04 03:06:09.310+1000 [           scripting] script (component) res:scripts/components/mob.lua
-[I] 2025/12/04 03:06:09.310+1000 [           scripting] script (component) res:scripts/components/player.lua
-[I] 2025/12/04 03:06:09.311+1000 [              locale] locales fi_FI uk_UA uz_UZ pl_PL ru_RU en_US de_DE be_BY added
-[I] 2025/12/04 03:06:09.312+1000 [              engine] loading bindings: res:config/bindings.toml
-[I] 2025/12/04 03:06:09.312+1000 [              engine] loading bindings: project:content/base/config/bindings.toml
-[I] 2025/12/04 03:06:09.312+1000 [              engine] loading assets
-[I] 2025/12/04 03:06:09.313+1000 [       assets-loader] loading textures/blocks as blocks
-[I] 2025/12/04 03:06:09.324+1000 [       assets-loader] loading textures/items as items
-[I] 2025/12/04 03:06:09.326+1000 [       assets-loader] loading textures/particles as particles
-[I] 2025/12/04 03:06:09.329+1000 [       assets-loader] loading fonts/font as normal
-[I] 2025/12/04 03:06:09.354+1000 [       assets-loader] loading shaders/ui as ui
-[I] 2025/12/04 03:06:09.354+1000 [       assets-loader] loading shaders/ui3d as ui3d
-[I] 2025/12/04 03:06:09.355+1000 [       assets-loader] loading shaders/main as main
-[I] 2025/12/04 03:06:09.355+1000 [       assets-loader] loading shaders/lines as lines
-[I] 2025/12/04 03:06:09.355+1000 [       assets-loader] loading shaders/entity as entity
-[I] 2025/12/04 03:06:09.355+1000 [       assets-loader] loading shaders/translucent as translucent
-[I] 2025/12/04 03:06:09.356+1000 [       assets-loader] loading shaders/background as background
-[I] 2025/12/04 03:06:09.356+1000 [       assets-loader] loading shaders/skybox_gen as skybox_gen
-[I] 2025/12/04 03:06:09.356+1000 [       assets-loader] loading shaders/shadows as shadows
-[I] 2025/12/04 03:06:09.357+1000 [       assets-loader] loading textures/gui/menubg as gui/menubg
-[I] 2025/12/04 03:06:09.358+1000 [       assets-loader] loading textures/gui/delete_icon as gui/delete_icon
-[I] 2025/12/04 03:06:09.358+1000 [       assets-loader] loading textures/gui/no_icon as gui/no_icon
-[I] 2025/12/04 03:06:09.358+1000 [       assets-loader] loading textures/gui/no_world_icon as gui/no_world_icon
-[I] 2025/12/04 03:06:09.358+1000 [       assets-loader] loading textures/gui/warning as gui/warning
-[I] 2025/12/04 03:06:09.359+1000 [       assets-loader] loading textures/gui/error as gui/error
-[I] 2025/12/04 03:06:09.359+1000 [       assets-loader] loading textures/gui/cross as gui/cross
-[I] 2025/12/04 03:06:09.359+1000 [       assets-loader] loading textures/gui/refresh as gui/refresh
-[I] 2025/12/04 03:06:09.359+1000 [       assets-loader] loading textures/gui/folder_icon as gui/folder_icon
-[I] 2025/12/04 03:06:09.360+1000 [       assets-loader] loading textures/gui/settings_icon as gui/settings_icon
-[I] 2025/12/04 03:06:09.360+1000 [       assets-loader] loading textures/misc/rain as misc/rain
-[I] 2025/12/04 03:06:09.367+1000 [       assets-loader] loading textures/misc/snow as misc/snow
-[I] 2025/12/04 03:06:09.371+1000 [       assets-loader] loading textures/gui/check_mark as gui/check_mark
-[I] 2025/12/04 03:06:09.373+1000 [       assets-loader] loading textures/gui/left_arrow as gui/left_arrow
-[I] 2025/12/04 03:06:09.375+1000 [       assets-loader] loading textures/gui/right_arrow as gui/right_arrow
-[I] 2025/12/04 03:06:09.377+1000 [       assets-loader] loading textures/gui/lock as gui/lock
-[I] 2025/12/04 03:06:09.380+1000 [       assets-loader] loading textures/gui/save as gui/save
-[I] 2025/12/04 03:06:09.382+1000 [       assets-loader] loading textures/gui/block as gui/block
-[I] 2025/12/04 03:06:09.384+1000 [       assets-loader] loading textures/gui/item as gui/item
-[I] 2025/12/04 03:06:09.384+1000 [       assets-loader] loading textures/gui/file as gui/file
-[I] 2025/12/04 03:06:09.384+1000 [       assets-loader] loading textures/gui/module as gui/module
-[I] 2025/12/04 03:06:09.384+1000 [       assets-loader] loading textures/gui/play as gui/play
-[I] 2025/12/04 03:06:09.384+1000 [       assets-loader] loading textures/gui/info as gui/info
-[I] 2025/12/04 03:06:09.385+1000 [       assets-loader] loading textures/gui/world as gui/world
-[I] 2025/12/04 03:06:09.385+1000 [       assets-loader] loading textures/gui/hud as gui/hud
-[I] 2025/12/04 03:06:09.385+1000 [       assets-loader] loading textures/gui/entity as gui/entity
-[I] 2025/12/04 03:06:09.385+1000 [       assets-loader] loading textures/gui/half_block as gui/half_block
-[I] 2025/12/04 03:06:09.385+1000 [       assets-loader] loading models/block as block
-[I] 2025/12/04 03:06:09.385+1000 [     assetload-funcs] store model "block" as "block"
-[I] 2025/12/04 03:06:09.385+1000 [       assets-loader] loading shaders/effects/default as default
-[I] 2025/12/04 03:06:09.386+1000 [       assets-loader] loading shaders/effects/ssao as ssao
-[I] 2025/12/04 03:06:09.386+1000 [       assets-loader] loading shaders/effects/deferred_lighting as deferred_lighting
-[I] 2025/12/04 03:06:09.386+1000 [       assets-loader] loading textures/cracks as cracks
-[I] 2025/12/04 03:06:09.386+1000 [       assets-loader] loading textures/misc/moon as misc/moon
-[I] 2025/12/04 03:06:09.390+1000 [       assets-loader] loading textures/misc/moon_flare as misc/moon_flare
-[I] 2025/12/04 03:06:09.397+1000 [       assets-loader] loading textures/misc/sun as misc/sun
-[I] 2025/12/04 03:06:09.402+1000 [       assets-loader] loading textures/gui/crosshair as gui/crosshair
-[I] 2025/12/04 03:06:09.403+1000 [       assets-loader] loading sounds/blocks/door_open as blocks/door_open
-[I] 2025/12/04 03:06:09.404+1000 [       assets-loader] loading sounds/blocks/door_close as blocks/door_close
-[I] 2025/12/04 03:06:09.405+1000 [       assets-loader] loading sounds/events/pickup as events/pickup
-[I] 2025/12/04 03:06:09.406+1000 [       assets-loader] loading sounds/ambient/rain as ambient/rain
-[I] 2025/12/04 03:06:09.421+1000 [       assets-loader] loading sounds/ambient/thunder as ambient/thunder
-[I] 2025/12/04 03:06:09.448+1000 [       assets-loader] loading models/drop-item as drop-item
-[I] 2025/12/04 03:06:09.449+1000 [     assetload-funcs] store model "drop-item" as "drop-item"
-[I] 2025/12/04 03:06:09.449+1000 [       assets-loader] loading sounds/steps/sand as steps/sand
-[I] 2025/12/04 03:06:09.452+1000 [       assets-loader] loading sounds/blocks/ground_place as blocks/ground_place
-[I] 2025/12/04 03:06:09.455+1000 [       assets-loader] loading sounds/blocks/ground_break as blocks/ground_break
-[I] 2025/12/04 03:06:09.456+1000 [       assets-loader] loading sounds/steps/ground as steps/ground
-[I] 2025/12/04 03:06:09.459+1000 [       assets-loader] loading sounds/blocks/ground_hit as blocks/ground_hit
-[I] 2025/12/04 03:06:09.461+1000 [       assets-loader] loading sounds/steps/grass as steps/grass
-[I] 2025/12/04 03:06:09.464+1000 [       assets-loader] loading sounds/steps/carpet as steps/carpet
-[I] 2025/12/04 03:06:09.467+1000 [       assets-loader] loading sounds/blocks/carpet_place as blocks/carpet_place
-[I] 2025/12/04 03:06:09.468+1000 [       assets-loader] loading sounds/blocks/carpet_break as blocks/carpet_break
-[I] 2025/12/04 03:06:09.469+1000 [       assets-loader] loading sounds/steps/wood as steps/wood
-[I] 2025/12/04 03:06:09.472+1000 [       assets-loader] loading sounds/blocks/wood_place as blocks/wood_place
-[I] 2025/12/04 03:06:09.474+1000 [       assets-loader] loading sounds/blocks/wood_break as blocks/wood_break
-[I] 2025/12/04 03:06:09.476+1000 [       assets-loader] loading sounds/blocks/wood_hit as blocks/wood_hit
-[I] 2025/12/04 03:06:09.476+1000 [       assets-loader] loading sounds/steps/snow as steps/snow
-[I] 2025/12/04 03:06:09.482+1000 [       assets-loader] loading sounds/blocks/snow_place as blocks/snow_place
-[I] 2025/12/04 03:06:09.484+1000 [       assets-loader] loading sounds/blocks/snow_break as blocks/snow_break
-[I] 2025/12/04 03:06:09.485+1000 [       assets-loader] loading sounds/steps/glass as steps/glass
-[I] 2025/12/04 03:06:09.489+1000 [       assets-loader] loading sounds/blocks/glass_place as blocks/glass_place
-[I] 2025/12/04 03:06:09.490+1000 [       assets-loader] loading sounds/blocks/glass_break as blocks/glass_break
-[I] 2025/12/04 03:06:09.492+1000 [       assets-loader] loading sounds/steps/metal as steps/metal
-[I] 2025/12/04 03:06:09.497+1000 [       assets-loader] loading sounds/blocks/metal_place as blocks/metal_place
-[I] 2025/12/04 03:06:09.500+1000 [       assets-loader] loading sounds/blocks/metal_break as blocks/metal_break
-[I] 2025/12/04 03:06:09.502+1000 [       assets-loader] loading sounds/steps/stone as steps/stone
-[I] 2025/12/04 03:06:09.505+1000 [       assets-loader] loading sounds/blocks/stone_place as blocks/stone_place
-[I] 2025/12/04 03:06:09.507+1000 [       assets-loader] loading sounds/blocks/stone_break as blocks/stone_break
-[I] 2025/12/04 03:06:09.509+1000 [       assets-loader] loading sounds/blocks/stone_hit as blocks/stone_hit
-[I] 2025/12/04 03:06:09.510+1000 [       assets-loader] loading res:layouts/files_panel.xml as core:files_panel
-[I] 2025/12/04 03:06:09.510+1000 [           scripting] script (layout) res:layouts/files_panel.xml.lua
-[I] 2025/12/04 03:06:09.510+1000 [       assets-loader] loading res:layouts/process.xml as core:process
-[I] 2025/12/04 03:06:09.510+1000 [           scripting] script (layout) res:layouts/process.xml.lua
-[I] 2025/12/04 03:06:09.510+1000 [       assets-loader] loading res:layouts/console.xml as core:console
-[I] 2025/12/04 03:06:09.511+1000 [           scripting] script (layout) res:layouts/console.xml.lua
-[I] 2025/12/04 03:06:09.511+1000 [       assets-loader] loading res:layouts/inventory.xml as core:inventory
-[I] 2025/12/04 03:06:09.511+1000 [           scripting] script (layout) res:layouts/inventory.xml.lua
-[I] 2025/12/04 03:06:09.511+1000 [       assets-loader] loading res:layouts/ingame_chat.xml as core:ingame_chat
-[I] 2025/12/04 03:06:09.511+1000 [           scripting] script (layout) res:layouts/ingame_chat.xml.lua
-[I] 2025/12/04 03:06:09.511+1000 [       assets-loader] loading res:layouts/code_editor.xml as core:code_editor
-[E] 2025/12/04 03:06:09.512+1000 [      gl-framebuffer] framebuffer is not complete!
-[I] 2025/12/04 03:06:09.512+1000 [           scripting] script (layout) res:layouts/code_editor.xml.lua
-[I] 2025/12/04 03:06:09.512+1000 [       assets-loader] loading models/drop-block as drop-block
-[I] 2025/12/04 03:06:09.512+1000 [     assetload-funcs] store model "drop-block" as "drop-block"
-[I] 2025/12/04 03:06:09.512+1000 [       assets-loader] loading models/player-body as player-body
-[I] 2025/12/04 03:06:09.512+1000 [     assetload-funcs] store model "player-body" as "player-body"
-[I] 2025/12/04 03:06:09.512+1000 [       assets-loader] loading models/player-head as player-head
-[I] 2025/12/04 03:06:09.512+1000 [     assetload-funcs] store model "player-head" as "player-head"
-[I] 2025/12/04 03:06:09.512+1000 [       assets-loader] loading textures/cracks/cracks_8 as cracks/cracks_8
-[I] 2025/12/04 03:06:09.515+1000 [       assets-loader] loading textures/cracks/cracks_0 as cracks/cracks_0
-[I] 2025/12/04 03:06:09.516+1000 [       assets-loader] loading textures/cracks/cracks_1 as cracks/cracks_1
-[I] 2025/12/04 03:06:09.517+1000 [       assets-loader] loading textures/cracks/cracks_4 as cracks/cracks_4
-[I] 2025/12/04 03:06:09.519+1000 [       assets-loader] loading textures/cracks/cracks_9 as cracks/cracks_9
-[I] 2025/12/04 03:06:09.519+1000 [       assets-loader] loading textures/cracks/cracks_6 as cracks/cracks_6
-[I] 2025/12/04 03:06:09.520+1000 [       assets-loader] loading textures/cracks/cracks_2 as cracks/cracks_2
-[I] 2025/12/04 03:06:09.520+1000 [       assets-loader] loading textures/cracks/cracks_7 as cracks/cracks_7
-[I] 2025/12/04 03:06:09.520+1000 [       assets-loader] loading textures/cracks/cracks_5 as cracks/cracks_5
-[I] 2025/12/04 03:06:09.520+1000 [       assets-loader] loading textures/cracks/cracks_10 as cracks/cracks_10
-[I] 2025/12/04 03:06:09.520+1000 [       assets-loader] loading textures/cracks/cracks_3 as cracks/cracks_3
-[I] 2025/12/04 03:06:09.521+1000 [       assets-loader] loading textures/entities/player as entities/player
-[I] 2025/12/04 03:06:09.521+1000 [               world] loading world New World 2 (user:worlds/New World 2)
-[I] 2025/12/04 03:06:09.522+1000 [               world] world version: 0.30 seed: 79420629243124 generator: base:demo
-[I] 2025/12/04 03:06:09.522+1000 [              engine] world open
-[I] 2025/12/04 03:06:09.522+1000 [ generator-scripting] script (generator) project:content/base/generators/demo.files/script.lua
-[I] 2025/12/04 03:06:09.522+1000 [     world-generator] total number of prototype levels is 11
-[I] 2025/12/04 03:06:09.528+1000 [   content-gfx-cache] uv cache size is 89088 B
-[W] 2025/12/04 03:06:09.533+1000 [              window] GL:PERFORMANCE:MEDIUM: Program/shader state performance warning: Vertex shader in program 42 is being recompiled based on GL state.
-[I] 2025/12/04 03:06:09.614+1000 [       chunks-render] created 6 workers
-[I] 2025/12/04 03:06:09.614+1000 [       chunks-render] memory consumption is 46886400 B
-[I] 2025/12/04 03:06:09.616+1000 [        level-screen] initializing pack 'base'
-[I] 2025/12/04 03:06:09.616+1000 [       scripting-hud] loading script project:content/base/scripts/hud.lua
-[I] 2025/12/04 03:06:09.616+1000 [        level-screen] initializing pack 'core'
-[I] 2025/12/04 03:06:09.616+1000 [       scripting-hud] loading script res:scripts/hud.lua
-[I] 2025/12/04 03:06:09.616+1000 [       scripting-hud] loading script res:scripts/hud_classes.lua
-[I] 2025/12/04 03:06:09.623+1000 [           gl-shader] shader 3 has been recompiled
-[I] 2025/12/04 03:06:09.623+1000 [           gl-shader] shader 6 has been recompiled
-[I] 2025/12/04 03:06:09.624+1000 [           gl-shader] shader 9 has been recompiled
-[I] 2025/12/04 03:06:09.624+1000 [           gl-shader] shader 12 has been recompiled
-[W] 2025/12/04 03:06:09.625+1000 [              window] GL:PERFORMANCE:MEDIUM: Program/shader state performance warning: Vertex shader in program 60 is being recompiled based on GL state.
-[I] 2025/12/04 03:08:56.358+1000 [        level-screen] saving world preview
-[I] 2025/12/04 03:08:57.610+1000 [       level-control] writing world 'New World 2'
-[I] 2025/12/04 03:08:57.619+1000 [              engine] world closed
-[I] 2025/12/04 03:08:57.634+1000 [           lua-debug] cleaning scripts cache
-[I] 2025/12/04 03:08:57.634+1000 [           lua-debug] no non-reset packs
-[I] 2025/12/04 03:08:57.634+1000 [           lua-debug] unloaded base:modules/util.lua
-[I] 2025/12/04 03:08:57.636+1000 [              locale] locales fi_FI uk_UA uz_UZ pl_PL ru_RU en_US de_DE be_BY added
-[I] 2025/12/04 03:08:57.637+1000 [              engine] loading bindings: res:config/bindings.toml
-[I] 2025/12/04 03:08:57.637+1000 [              engine] loading bindings: project:content/base/config/bindings.toml
-[I] 2025/12/04 03:08:57.637+1000 [              engine] loading assets
-[I] 2025/12/04 03:08:57.637+1000 [       assets-loader] loading textures/blocks as blocks
-[I] 2025/12/04 03:08:57.649+1000 [       assets-loader] loading textures/items as items
-[I] 2025/12/04 03:08:57.650+1000 [       assets-loader] loading textures/particles as particles
-[I] 2025/12/04 03:08:57.651+1000 [       assets-loader] loading fonts/font as normal
-[I] 2025/12/04 03:08:57.665+1000 [       assets-loader] loading shaders/ui as ui
-[I] 2025/12/04 03:08:57.666+1000 [       assets-loader] loading shaders/ui3d as ui3d
-[I] 2025/12/04 03:08:57.666+1000 [       assets-loader] loading shaders/main as main
-[I] 2025/12/04 03:08:57.666+1000 [       assets-loader] loading shaders/lines as lines
-[I] 2025/12/04 03:08:57.666+1000 [       assets-loader] loading shaders/entity as entity
-[I] 2025/12/04 03:08:57.667+1000 [       assets-loader] loading shaders/translucent as translucent
-[I] 2025/12/04 03:08:57.667+1000 [       assets-loader] loading shaders/background as background
-[I] 2025/12/04 03:08:57.667+1000 [       assets-loader] loading shaders/skybox_gen as skybox_gen
-[I] 2025/12/04 03:08:57.668+1000 [       assets-loader] loading shaders/shadows as shadows
-[I] 2025/12/04 03:08:57.668+1000 [       assets-loader] loading textures/gui/menubg as gui/menubg
-[I] 2025/12/04 03:08:57.669+1000 [       assets-loader] loading textures/gui/delete_icon as gui/delete_icon
-[I] 2025/12/04 03:08:57.670+1000 [       assets-loader] loading textures/gui/no_icon as gui/no_icon
-[I] 2025/12/04 03:08:57.671+1000 [       assets-loader] loading textures/gui/no_world_icon as gui/no_world_icon
-[I] 2025/12/04 03:08:57.671+1000 [       assets-loader] loading textures/gui/warning as gui/warning
-[I] 2025/12/04 03:08:57.671+1000 [       assets-loader] loading textures/gui/error as gui/error
-[I] 2025/12/04 03:08:57.671+1000 [       assets-loader] loading textures/gui/cross as gui/cross
-[I] 2025/12/04 03:08:57.671+1000 [       assets-loader] loading textures/gui/refresh as gui/refresh
-[I] 2025/12/04 03:08:57.672+1000 [       assets-loader] loading textures/gui/folder_icon as gui/folder_icon
-[I] 2025/12/04 03:08:57.672+1000 [       assets-loader] loading textures/gui/settings_icon as gui/settings_icon
-[I] 2025/12/04 03:08:57.672+1000 [       assets-loader] loading textures/misc/rain as misc/rain
-[I] 2025/12/04 03:08:57.678+1000 [       assets-loader] loading textures/misc/snow as misc/snow
-[I] 2025/12/04 03:08:57.679+1000 [       assets-loader] loading textures/gui/check_mark as gui/check_mark
-[I] 2025/12/04 03:08:57.680+1000 [       assets-loader] loading textures/gui/left_arrow as gui/left_arrow
-[I] 2025/12/04 03:08:57.682+1000 [       assets-loader] loading textures/gui/right_arrow as gui/right_arrow
-[I] 2025/12/04 03:08:57.683+1000 [       assets-loader] loading textures/gui/lock as gui/lock
-[I] 2025/12/04 03:08:57.683+1000 [       assets-loader] loading textures/gui/save as gui/save
-[I] 2025/12/04 03:08:57.683+1000 [       assets-loader] loading textures/gui/block as gui/block
-[I] 2025/12/04 03:08:57.683+1000 [       assets-loader] loading textures/gui/item as gui/item
-[I] 2025/12/04 03:08:57.683+1000 [       assets-loader] loading textures/gui/file as gui/file
-[I] 2025/12/04 03:08:57.684+1000 [       assets-loader] loading textures/gui/module as gui/module
-[I] 2025/12/04 03:08:57.684+1000 [       assets-loader] loading textures/gui/play as gui/play
-[I] 2025/12/04 03:08:57.684+1000 [       assets-loader] loading textures/gui/info as gui/info
-[I] 2025/12/04 03:08:57.684+1000 [       assets-loader] loading textures/gui/world as gui/world
-[I] 2025/12/04 03:08:57.684+1000 [       assets-loader] loading textures/gui/hud as gui/hud
-[I] 2025/12/04 03:08:57.684+1000 [       assets-loader] loading textures/gui/entity as gui/entity
-[I] 2025/12/04 03:08:57.685+1000 [       assets-loader] loading textures/gui/half_block as gui/half_block
-[I] 2025/12/04 03:08:57.685+1000 [       assets-loader] loading models/block as block
-[I] 2025/12/04 03:08:57.685+1000 [     assetload-funcs] store model "block" as "block"
-[I] 2025/12/04 03:08:57.685+1000 [       assets-loader] loading shaders/effects/default as default
-[I] 2025/12/04 03:08:57.685+1000 [       assets-loader] loading shaders/effects/ssao as ssao
-[I] 2025/12/04 03:08:57.685+1000 [       assets-loader] loading shaders/effects/deferred_lighting as deferred_lighting
+[I] 2025/12/06 08:35:13.464+1000 [              engine] engine version: 0.31
+[I] 2025/12/06 08:35:13.464+1000 [        engine-paths] executable path: /home/alex/Documents/vxcprojects/voxelcore_modloader/build/VoxelEngine
+[I] 2025/12/06 08:35:13.464+1000 [        engine-paths] resources folder: /home/alex/Documents/vxcprojects/voxelcore_modloader/res
+[I] 2025/12/06 08:35:13.464+1000 [        engine-paths] user files folder: /home/alex/Documents/vxcprojects/voxelcore_modloader
+[I] 2025/12/06 08:35:13.464+1000 [        engine-paths] project folder: /home/alex/Documents/vxcprojects/voxelcore_modloader/res
+[I] 2025/12/06 08:35:13.464+1000 [              engine] loaded project "default"
+[I] 2025/12/06 08:35:13.465+1000 [              engine] loading settings
+[I] 2025/12/06 08:35:13.780+1000 [              window] max texture size is 32768
+[I] 2025/12/06 08:35:13.781+1000 [              window] monitor content scale: 1x1
+[I] 2025/12/06 08:35:13.784+1000 [              window] max texture size is 32768
+[I] 2025/12/06 08:35:13.784+1000 [              window] GL Vendor: NVIDIA Corporation
+[I] 2025/12/06 08:35:13.784+1000 [              window] GL Renderer: NVIDIA GeForce RTX 2070/PCIe/SSE2
+[I] 2025/12/06 08:35:13.784+1000 [              window] GLFW: 3.3.10 X11 GLX EGL OSMesa clock_gettime evdev shared
+[I] 2025/12/06 08:35:13.784+1000 [              engine] loading controls
+[I] 2025/12/06 08:35:13.784+1000 [               audio] initializing ALAudio backend
+[I] 2025/12/06 08:35:13.819+1000 [            al-audio] initialized
+[I] 2025/12/06 08:35:13.819+1000 [            al-audio] max mono sources: 255
+[I] 2025/12/06 08:35:13.819+1000 [            al-audio] output devices:
+[I] 2025/12/06 08:35:13.819+1000 [            al-audio]   Built-in Audio Analog Stereo
+[I] 2025/12/06 08:35:13.819+1000 [            al-audio]   TU106 High Definition Audio Controller Digital Stereo (HDMI)
+[I] 2025/12/06 08:35:13.819+1000 [            al-audio] input devices:
+[I] 2025/12/06 08:35:13.819+1000 [            al-audio]   Fifine Microphone Mono
+[I] 2025/12/06 08:35:13.819+1000 [            al-audio]   Monitor of Built-in Audio Analog Stereo
+[I] 2025/12/06 08:35:13.819+1000 [            al-audio]   Built-in Audio Analog Stereo
+[I] 2025/12/06 08:35:13.819+1000 [            al-audio]   Monitor of TU106 High Definition Audio Controller Digital Stereo (HDMI)
+[I] 2025/12/06 08:35:13.825+1000 [           lua-state] Lua 5.1
+[I] 2025/12/06 08:35:13.825+1000 [           lua-state] LuaJIT 2.1.1703358377
+[I] 2025/12/06 08:35:13.831+1000 [              locale] locales fi_FI uk_UA uz_UZ pl_PL ru_RU en_US de_DE be_BY added
+[I] 2025/12/06 08:35:13.832+1000 [               audio] setting input device to 
+[W] 2025/12/06 08:35:13.843+1000 [             project] project start script does not exists
+[I] 2025/12/06 08:35:13.843+1000 [             project] starting project client script
+[I] 2025/12/06 08:35:13.843+1000 [              engine] initializing mod loader
+[I] 2025/12/06 08:35:13.843+1000 [             modding] scanning mods directory: user:mods
+[I] 2025/12/06 08:35:13.843+1000 [             modding] loading mod from: ./mods/libexamplemod.so
+[I] 2025/12/06 08:35:13.844+1000 [             modding] initializing mod: ExampleMod
+[I] 2025/12/06 08:35:13.844+1000 [             modding] successfully loaded mod: ExampleMod v1.0.0 by VoxelCoreMods
+[I] 2025/12/06 08:35:13.844+1000 [             modding] loading mod from: ./mods/libmodsinformer.so
+[I] 2025/12/06 08:35:13.844+1000 [             modding] initializing mod: ModsInformer
+[I] 2025/12/06 08:35:13.844+1000 [             modding] successfully loaded mod: ModsInformer v1.0.0 by VoxelCoreMods
+[I] 2025/12/06 08:35:13.844+1000 [             modding] loaded 2 mod(s)
+[I] 2025/12/06 08:35:13.844+1000 [              engine] mod loading complete: 2 mod(s) loaded
+[I] 2025/12/06 08:35:13.845+1000 [            mainloop] starting menu screen
+[I] 2025/12/06 08:35:13.845+1000 [           lua-debug] cleaning scripts cache
+[I] 2025/12/06 08:35:13.845+1000 [           lua-debug] no non-reset packs
+[I] 2025/12/06 08:35:13.845+1000 [              locale] locales fi_FI uk_UA uz_UZ pl_PL ru_RU en_US de_DE be_BY added
+[I] 2025/12/06 08:35:13.847+1000 [              engine] loading bindings: res:config/bindings.toml
+[I] 2025/12/06 08:35:13.847+1000 [              engine] loading bindings: project:content/base/config/bindings.toml
+[I] 2025/12/06 08:35:13.847+1000 [              engine] loading assets
+[I] 2025/12/06 08:35:13.848+1000 [       assets-loader] loading textures/blocks as blocks
+[I] 2025/12/06 08:35:13.859+1000 [       assets-loader] loading textures/items as items
+[I] 2025/12/06 08:35:13.860+1000 [       assets-loader] loading textures/particles as particles
+[I] 2025/12/06 08:35:13.861+1000 [       assets-loader] loading fonts/font as normal
+[I] 2025/12/06 08:35:13.878+1000 [       assets-loader] loading shaders/ui as ui
+[I] 2025/12/06 08:35:13.879+1000 [       assets-loader] loading shaders/ui3d as ui3d
+[I] 2025/12/06 08:35:13.879+1000 [       assets-loader] loading shaders/main as main
+[I] 2025/12/06 08:35:13.879+1000 [       assets-loader] loading shaders/lines as lines
+[I] 2025/12/06 08:35:13.880+1000 [       assets-loader] loading shaders/entity as entity
+[I] 2025/12/06 08:35:13.880+1000 [       assets-loader] loading shaders/translucent as translucent
+[I] 2025/12/06 08:35:13.880+1000 [       assets-loader] loading shaders/background as background
+[I] 2025/12/06 08:35:13.881+1000 [       assets-loader] loading shaders/skybox_gen as skybox_gen
+[I] 2025/12/06 08:35:13.881+1000 [       assets-loader] loading shaders/shadows as shadows
+[I] 2025/12/06 08:35:13.881+1000 [       assets-loader] loading textures/gui/menubg as gui/menubg
+[I] 2025/12/06 08:35:13.882+1000 [       assets-loader] loading textures/gui/delete_icon as gui/delete_icon
+[I] 2025/12/06 08:35:13.882+1000 [       assets-loader] loading textures/gui/no_icon as gui/no_icon
+[I] 2025/12/06 08:35:13.882+1000 [       assets-loader] loading textures/gui/no_world_icon as gui/no_world_icon
+[I] 2025/12/06 08:35:13.882+1000 [       assets-loader] loading textures/gui/warning as gui/warning
+[I] 2025/12/06 08:35:13.883+1000 [       assets-loader] loading textures/gui/error as gui/error
+[I] 2025/12/06 08:35:13.883+1000 [       assets-loader] loading textures/gui/cross as gui/cross
+[I] 2025/12/06 08:35:13.883+1000 [       assets-loader] loading textures/gui/refresh as gui/refresh
+[I] 2025/12/06 08:35:13.884+1000 [       assets-loader] loading textures/gui/folder_icon as gui/folder_icon
+[I] 2025/12/06 08:35:13.884+1000 [       assets-loader] loading textures/gui/settings_icon as gui/settings_icon
+[I] 2025/12/06 08:35:13.885+1000 [       assets-loader] loading textures/misc/rain as misc/rain
+[I] 2025/12/06 08:35:13.891+1000 [       assets-loader] loading textures/misc/snow as misc/snow
+[I] 2025/12/06 08:35:13.891+1000 [       assets-loader] loading textures/gui/check_mark as gui/check_mark
+[I] 2025/12/06 08:35:13.892+1000 [       assets-loader] loading textures/gui/left_arrow as gui/left_arrow
+[I] 2025/12/06 08:35:13.892+1000 [       assets-loader] loading textures/gui/right_arrow as gui/right_arrow
+[I] 2025/12/06 08:35:13.892+1000 [       assets-loader] loading textures/gui/lock as gui/lock
+[I] 2025/12/06 08:35:13.892+1000 [       assets-loader] loading textures/gui/save as gui/save
+[I] 2025/12/06 08:35:13.892+1000 [       assets-loader] loading textures/gui/block as gui/block
+[I] 2025/12/06 08:35:13.892+1000 [       assets-loader] loading textures/gui/item as gui/item
+[I] 2025/12/06 08:35:13.892+1000 [       assets-loader] loading textures/gui/file as gui/file
+[I] 2025/12/06 08:35:13.893+1000 [       assets-loader] loading textures/gui/module as gui/module
+[I] 2025/12/06 08:35:13.893+1000 [       assets-loader] loading textures/gui/play as gui/play
+[I] 2025/12/06 08:35:13.893+1000 [       assets-loader] loading textures/gui/info as gui/info
+[I] 2025/12/06 08:35:13.893+1000 [       assets-loader] loading textures/gui/world as gui/world
+[I] 2025/12/06 08:35:13.893+1000 [       assets-loader] loading textures/gui/hud as gui/hud
+[I] 2025/12/06 08:35:13.893+1000 [       assets-loader] loading textures/gui/entity as gui/entity
+[I] 2025/12/06 08:35:13.893+1000 [       assets-loader] loading textures/gui/half_block as gui/half_block
+[I] 2025/12/06 08:35:13.894+1000 [       assets-loader] loading models/block as block
+[I] 2025/12/06 08:35:13.894+1000 [     assetload-funcs] store model "block" as "block"
+[I] 2025/12/06 08:35:13.894+1000 [       assets-loader] loading shaders/effects/default as default
+[I] 2025/12/06 08:35:13.894+1000 [       assets-loader] loading shaders/effects/ssao as ssao
+[I] 2025/12/06 08:35:13.894+1000 [       assets-loader] loading shaders/effects/deferred_lighting as deferred_lighting
+[I] 2025/12/06 08:35:13.897+1000 [            mainloop] main loop started
+[I] 2025/12/06 08:35:39.406+1000 [           scripting] script (layout) core:layouts/pages/content_menu.xml.lua
+[W] 2025/12/06 08:35:39.423+1000 [              window] GL:PERFORMANCE:MEDIUM: Program/shader state performance warning: Vertex shader in program 3 is being recompiled based on GL state.
